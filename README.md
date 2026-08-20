@@ -6,9 +6,8 @@
   <img src="https://via.placeholder.com/1200x400/0b1326/ffffff?text=VALEN+DYNAMICS+AEROSPACE" alt="Valen Dynamics Banner" width="100%">
 </p>
 
-![Industry](https://img.shields.io/badge/INDUSTRY-AEROSPACE%20%26%20DEFENSE-blue?style=for-the-badge) 
-![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-success?style=for-the-badge)
-![Origin](https://img.shields.io/badge/ORIGIN-ARGENTINA-skygreen?style=for-the-badge)
+![Banner de Valen Dynamics](./assets/Banner.jpg)
+
 
 ---
 
