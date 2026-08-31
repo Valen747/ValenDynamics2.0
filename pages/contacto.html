@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Valen Dynamics</title>
+  
+  <!-- Favicon para la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -32,27 +36,64 @@
     </div>
   </section>
 
-  <!-- Formulario de Contacto -->
-  <main class="container" style="max-width: 650px;">
-    <form style="background: var(--bg-card); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--border-color);">
-      <div class="form-group">
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" id="nombre" placeholder="Ej. Ing. Juan Pérez">
+  <main class="container">
+
+    <!-- Tarjetas Informativas de Sedes / Departamentos -->
+    <div class="cards-grid" style="margin-bottom: 4rem;">
+      <div class="card">
+        <div class="card-body">
+          <h3>Cuartel General & Plantas</h3>
+          <p><strong>Ubicación:</strong> Guarnición Aérea Córdoba / Hangar Central<br>
+             <strong>Atención:</strong> Lunes a Viernes, 08:00 - 17:00 hs</p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="email">Correo Electrónico</label>
-        <input type="email" id="email" placeholder="correo@organizacion.com">
+
+      <div class="card">
+        <div class="card-body">
+          <h3>División de Ingeniería & I+D</h3>
+          <p><strong>E-mail:</strong> id@valendynamics.com<br>
+             <strong>Proyectos:</strong> Desarrollo de prototipos y aviónica</p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="asunto">Asunto</label>
-        <input type="text" id="asunto" placeholder="Consulta técnica / Propuesta de desarrollo">
+
+      <div class="card">
+        <div class="card-body">
+          <h3>Relaciones Institucionales</h3>
+          <p><strong>E-mail:</strong> contacto@valendynamics.com<br>
+             <strong>Enlace:</strong> Fuerzas armadas y alianzas estratégicas</p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" rows="5" placeholder="Describa los requerimientos de su proyecto o consulta..."></textarea>
-      </div>
-      <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; margin-top: 0.5rem;">Enviar Mensaje</button>
-    </form>
+    </div>
+
+    <!-- Formulario de Contacto Conectado a Formspree -->
+    <div style="max-width: 650px; margin: 0 auto;">
+      <form action="https://formspree.io/f/mvkokorb" method="POST" style="background: var(--bg-card); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--border-color);">
+        <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); border-left: 4px solid var(--accent-blue); padding-left: 0.75rem;">Enviar Mensaje</h2>
+
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Ing. Juan Pérez" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="correo@organizacion.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="_subject" placeholder="Consulta técnica / Propuesta de desarrollo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describa los requerimientos de su proyecto o consulta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; margin-top: 0.5rem;">Enviar Mensaje</button>
+      </form>
+    </div>
+
   </main>
 
   <!-- Pie de página -->
