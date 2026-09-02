@@ -227,7 +227,7 @@ body {
 }
 
 .card > .card-body {
-  padding: 1;
+  padding: 0.8;
 }
 
 .card-body h3 {
