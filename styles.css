@@ -196,7 +196,7 @@ body {
 
 /* --- FIX EXACTO PARA EL HTML DE PILOTOS CON card-img-wrapper --- */
 .card-img-wrapper {
-  width: 100%;
+  width: 120%;
   height: 250px;
   overflow: hidden;
   position: relative;
@@ -227,7 +227,7 @@ body {
 }
 
 .card > .card-body {
-  padding: 0;
+  padding: 1;
 }
 
 .card-body h3 {
