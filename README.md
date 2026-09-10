@@ -2,10 +2,6 @@
 
 > **Defensa Avanzada & Innovación Aeroespacial Global**
 
-<p align="center">
-  <img src="https://via.placeholder.com/1200x400/0b1326/ffffff?text=VALEN+DYNAMICS+AEROSPACE" alt="Valen Dynamics Banner" width="100%">
-</p>
-
 ![Banner de Valen Dynamics](./assets/Banner.jpeg)
 
 
